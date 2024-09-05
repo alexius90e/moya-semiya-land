@@ -1,2 +1,84 @@
 .header {
+  padding: 28px 0 23px;
+  position: relative;
+
+  @include desktop {
+    padding: 18px 0 0;
+  }
+
+  @include tablet {
+    padding: 15px 0;
+  }
+
+  &__top {
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 10;
+
+    @include desktop {
+      width: 150px;
+    }
+
+    @include tablet {
+      width: 110px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: absolute;
+    z-index: 10;
+    top: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 826px;
+    width: 100%;
+
+    @media (max-width: 1600px) {
+      justify-content: center;
+      gap: 45px;
+    }
+
+    @include desktop {
+      position: static;
+      justify-content: flex-end;
+      transform: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-size: 32px;
+    line-height: 129%;
+    color: #fff;
+    font-weight: 400;
+
+    @include laptop {
+      font-size: 26px;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @include tablet {
+      display: block;
+      padding: 0;
+      background: 0 0;
+    }
+  }
 }
