@@ -35,12 +35,14 @@ html {
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   position: relative;
   min-width: 360px;
   margin: 0;
+  overflow-x: hidden;
   overflow-y: scroll;
   color: $black;
   background-color: #fffcf9;
