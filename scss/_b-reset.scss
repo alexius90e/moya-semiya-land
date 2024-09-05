@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Helvetica;
+  src: url('../fonts/Helvetica.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Helvetica;
+  src: url('../fonts/Helvetica-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Dolce Caffe';
+  src: url('../fonts/DolceCaffe-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --main-font: 'Dolce Caffe', sans-serif;
+  --second-font: 'Helvetica', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  min-width: 360px;
+  margin: 0;
+  overflow-y: scroll;
+  color: $black;
+  background-color: #fffcf9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+button,
+input,
+label,
+select,
+textarea {
+  font-family: var(--main-font);
+  border: none;
+}
+
+button {
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

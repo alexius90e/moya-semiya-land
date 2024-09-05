@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ru" style="scroll-behavior: smooth">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя семья</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://moya-semia.ru/" />
+    <meta property="og:title" content="Моя семья - Семейные приключения Фруктовых" />
+    <meta
+      property="og:description"
+      content="Говорят, как только попадаешь в семейный чат, пути назад нет. Так случилось и с семьёй Фруктовых. Мама Катя, папа Игорь, их сын Макс и дочка Нюта переехали в новый дом. Упаковывать и перевозить вещи, конечно, помогали бабушка Лариса и дед Даниил. Для переезда сделали семейный чат, и там понеслось!"
+    />
+    <meta property="og:image" content="././assets/hero-bg-1300.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://moya-semia.ru/" />
+    <meta property="twitter:title" content="Моя семья - Семейные приключения Фруктовых" />
+    <meta
+      property="twitter:description"
+      content="Говорят, как только попадаешь в семейный чат, пути назад нет. Так случилось и с семьёй Фруктовых. Мама Катя, папа Игорь, их сын Макс и дочка Нюта переехали в новый дом. Упаковывать и перевозить вещи, конечно, помогали бабушка Лариса и дед Даниил. Для переезда сделали семейный чат, и там понеслось!"
+    />
+    <meta property="twitter:image" content="././assets/hero-bg-1300.jpg" />
+
+    <!-- Other meta tags -->
+    <meta
+      name="description"
+      content="Следите за увлекательными приключениями семьи Фруктовых в их новом доме. Комедийный сериал о семейной жизни, переезде и веселых моментах в семейном чате."
+    />
+    <meta
+      name="keywords"
+      content="Моя семья, Фруктовые, семейный сериал, комедия, семейный чат, переезд"
+    />
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css " />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <a class="header__logo" target="_blank" href="https://moya-semia.ru/">
+              <img src="./assets/logo.svg" width="246" height="150" alt="Логотип" />
+            </a>
+            <nav class="header__nav">
+              <a class="header__link" href="https://family-henna.vercel.app/#syujet">О сериале</a>
+              <a class="header__link" href="https://family-henna.vercel.app/#episode">Все серии</a>
+              <a class="header__link" href="https://family-henna.vercel.app/#">О Моей Семье</a>
+            </nav>
+            <button class="header__menu">
+              <img
+                src="./assets/header-menu.svg"
+                width="27"
+                height="22"
+                alt="Открыть меню"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+      <header class="header-mobile">
+        <div class="container">
+          <div class="header-mobile__top">
+            <a class="header__logo" target="_blank" href="https://moya-semia.ru/">
+              <img src="./assets/logo.svg" width="246" height="150" alt="Логотип" />
+            </a>
+            <button class="header-mobile__close">
+              <img src="./assets/header-close.svg" alt="Закрыть меню" />
+            </button>
+          </div>
+          <nav class="header-mobile__nav">
+            <a
+              class="header-mobile__link header-mobile__close"
+              href="https://family-henna.vercel.app/#syujet"
+              >О сериале</a
+            >
+            <a
+              class="header-mobile__link header-mobile__close"
+              href="https://family-henna.vercel.app/#episode"
+              >Все серии</a
+            >
+            <a
+              class="header-mobile__link header-mobile__close"
+              href="https://family-henna.vercel.app/#"
+              >О Моей Семье</a
+            >
+          </nav>
+        </div>
+      </header>
+      <div class="intro">
+        <div class="container">
+          <img
+            class="intro__image"
+            src="./assets/terapy.svg"
+            width="406"
+            height="227"
+            alt="Семейная терапия"
+          />
+          <div class="intro__flex">
+            <span class="intro__tag">2024</span>
+            <span class="intro__dot"></span>
+            <span class="intro__tag">СЕМЕЙНЫЙ</span>
+            <span class="intro__dot"></span>
+            <span class="intro__tag">1 СЕЗОН</span>
+            <span class="intro__dot"></span>
+            <span class="intro__rating">16+</span>
+          </div>
+          <p class="intro__description">
+            Семейный чат бывает испытанием, если относиться к&nbsp;нему слишком серьезно. Но любую
+            непонятную ситуацию поможет разбавить микс поддержки и&nbsp;юмора в кругу Моей Семьи.
+          </p>
+          <a class="intro__watch" href="https://family-henna.vercel.app/#episode">
+            <img src="./assets/hero-play.svg" width="30" height="34" alt="Воспроизвести" />
+            СМОТРЕТЬ СЕРИАЛ
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="story">
+        <div class="container">
+          <div class="story__grid">
+            <!-- <img class="story__image" src="./assets/story-image.png" width="791" height="632" loading="lazy" alt="Картинка"> -->
+            <div class="story__image">
+              <img
+                class="phone__image"
+                src="./assets/phone.png"
+                loading="lazy"
+                alt="Картинка"
+              />
+              <img
+                class="fruits__image"
+                src="./assets/fruits.webp"
+                loading="lazy"
+                alt="Картинка"
+                style="translate: none; rotate: none; scale: none; transform: rotate(168.598deg)"
+              />
+            </div>
+
+            <div class="story__wrapper">
+              <div class="story__wrapper">
+                <h2 class="story__title" id="syujet">СЮЖЕТ</h2>
+                <p class="story__text">
+                  Говорят, как только попадаешь в семейный чат, пути назад нет. Так случилось и с
+                  семьёй Фруктовых. Мама Катя, папа Игорь, их сын Макс и дочка Нюта переехали в
+                  новый дом. Упаковывать и перевозить вещи, конечно, помогали бабушка Лариса и дед
+                  Даниил. Для переезда сделали семейный чат, и там понеслось!
+                  <br /><br />
+                  Семья быстро поняла, что не растерять самообладание в потоке бытовых неурядиц
+                  проще, если всем вместе посмеяться.. И неважно, над мемом или над сообщением деда,
+                  главное — любя.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="watch">
+        <div class="container" id="episode">
+          <div
+            class="watch__slider swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+          >
+            <div
+              class="swiper-wrapper"
+              id="swiper-wrapper-e9910ab5eac2e20a9"
+              aria-live="polite"
+              style="
+                transition-duration: 0ms;
+                transform: translate3d(0px, 0px, 0px);
+                transition-delay: 0ms;
+              "
+            >
+              <div
+                class="watch__first swiper-slide active swiper-slide-active"
+                role="group"
+                aria-label="1 / 5"
+                style="width: 1036.15px; margin-right: 40px"
+              >
+                <h2 class="watch__title">Смотрите<br />все серии</h2>
+              </div>
+              <div
+                id="video1"
+                class="watch__item first swiper-slide swiper-slide-next"
+                style="
+                  background-image: url('./assets/watch-1.jpg');
+                  width: 1036.15px;
+                  margin-right: 40px;
+                "
+                role="group"
+                aria-label="2 / 5"
+              >
+                <div class="watch__main">
+                  <div class="watch__top">
+                    <img
+                      class="watch__lines"
+                      width="37"
+                      height="24"
+                      src="./assets/watch-lines.svg"
+                      alt="Связь"
+                    />
+                    <img
+                      class="watch__battery"
+                      width="53"
+                      height="25"
+                      src="./assets/watch-battery.svg"
+                      alt="Заряд"
+                    />
+                  </div>
+                  <div class="watch__align">
+                    <a class="watch__play" href="https://family-henna.vercel.app/#">
+                      <img
+                        src="./assets/watch-play.svg"
+                        width="108"
+                        height="108"
+                        alt="Воспроизвести"
+                      />
+                    </a>
+                  </div>
+                  <p class="watch__suptitle">Серия 1</p>
+                  <h3 class="watch__caption">
+                    Дело<br />
+                    в&nbsp;яблоках
+                  </h3>
+                </div>
+                <div class="watch__hover">
+                  <div class="watch__top">
+                    <img
+                      class="watch__lines"
+                      width="37"
+                      height="24"
+                      src="./assets/watch-lines.svg"
+                      alt="Связь"
+                    />
+                    <img
+                      class="watch__battery"
+                      width="53"
+                      height="25"
+                      src="./assets/watch-battery.svg"
+                      alt="Заряд"
+                    />
+                    <button class="watch__close">
+                      <img src="./assets/watch-close.svg" alt="Закрыть" />
+                    </button>
+                  </div>
+                  <p class="watch__suptitle">Серия 1</p>
+                  <h3 class="watch__caption">
+                    Дело<br />
+                    в&nbsp;яблоках
+                  </h3>
+                  <p class="watch__description">
+                    Катя и Макс обнаруживают что после переезда пропали учебники. Часики тикают,
+                    варианты, где та самая коробка, кончаются, но есть одна сочная зацепка – яблоки.
+                  </p>
+                  <div class="watch__align">
+                    <a class="watch__bottom" href="https://family-henna.vercel.app/#">
+                      <img
+                        src="./assets/watch-play.svg"
+                        width="72"
+                        height="72"
+                        alt="Воспроизвести"
+                      />
+                      СМОТРЕТЬ
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="video2"
+                class="watch__item second swiper-slide"
+                style="
+                  background-image: url('./assets/watch-2.jpg');
+                  width: 1036.15px;
+                  margin-right: 40px;
+                "
+                role="group"
+                aria-label="3 / 5"
+              >
+                <div class="watch__main">
+                  <div class="watch__top">
+                    <img
+                      class="watch__lines"
+                      width="37"
+                      height="24"
+                      src="./assets/watch-lines.svg"
+                      alt="Связь"
+                    />
+                    <img
+                      class="watch__battery"
+                      width="53"
+                      height="25"
+                      src="./assets/watch-battery.svg"
+                      alt="Заряд"
+                    />
+                  </div>
+                  <div class="watch__align">
+                    <a class="watch__play" href="https://family-henna.vercel.app/#">
+                      <img
+                        src="./assets/watch-play.svg"
+                        width="108"
+                        height="108"
+                        alt="Воспроизвести"
+                      />
+                    </a>
+                  </div>
+                  <p class="watch__suptitle">Серия 2</p>
+                  <h3 class="watch__caption">
+                    Вишня<br />
+                    в&nbsp;эфире
+                  </h3>
+                </div>
+                <div class="watch__hover">
+                  <div class="watch__top">
+                    <img
+                      class="watch__lines"
+                      width="37"
+                      height="24"
+                      src="./assets/watch-lines.svg"
+                      alt="Связь"
+                    />
+                    <img
+                      class="watch__battery"
+                      width="53"
+                      height="25"
+                      src="./assets/watch-battery.svg"
+                      alt="Заряд"
+                    />
+                    <button class="watch__close">
+                      <img src="./assets/watch-close.svg" alt="Закрыть" />
+                    </button>
+                  </div>
+                  <p class="watch__suptitle">Серия 2</p>
+                  <h3 class="watch__caption">
+                    Вишня<br />
+                    в&nbsp;эфире
+                  </h3>
+                  <p class="watch__description">
+                    Перед Катей сложный вопрос: пойти за мечтой о карьере ведущей или быть ближе к
+                    любимым? Найти выход помогает вишневый микс, ведь не обязательно выбирать что-то
+                    одно.
+                  </p>
+                  <div class="watch__align">
+                    <a class="watch__bottom" href="https://family-henna.vercel.app/#">
+                      <img
+                        src="./assets/watch-play.svg"
+                        width="72"
+                        height="72"
+                        alt="Воспроизвести"
+                      />
+                      СМОТРЕТЬ
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="video3"
+                class="watch__item third swiper-slide"
+                style="
+                  background-image: url('./assets/watch-3.jpg');
+                  width: 1036.15px;
+                  margin-right: 40px;
+                "
+                role="group"
+                aria-label="4 / 5"
+              >
+                <div class="watch__main">
+                  <div class="watch__top">
+                    <img
+                      class="watch__lines"
+                      width="37"
+                      height="24"
+                      src="./assets/watch-lines.svg"
+                      alt="Связь"
+                    />
+                    <img
+                      class="watch__battery"
+                      width="53"
+                      height="25"
+                      src="./assets/watch-battery.svg"
+                      alt="Заряд"
+                    />
+                  </div>
+                  <div class="watch__align">
+                    <a class="watch__play" href="https://family-henna.vercel.app/#">
+                      <img
+                        src="./assets/watch-play.svg"
+                        width="108"
+                        height="108"
+                        alt="Воспроизвести"
+                      />
+                    </a>
+                  </div>
+                  <p class="watch__suptitle">Серия 3</p>
+                  <h3 class="watch__caption">
+                    Ягодная<br />
+                    пауза
+                  </h3>
+                </div>
+                <div class="watch__hover">
+                  <div class="watch__top">
+                    <img
+                      class="watch__lines"
+                      width="37"
+                      height="24"
+                      src="./assets/watch-lines.svg"
+                      alt="Связь"
+                    />
+                    <img
+                      class="watch__battery"
+                      width="53"
+                      height="25"
+                      src="./assets/watch-battery.svg"
+                      alt="Заряд"
+                    />
+                    <button class="watch__close">
+                      <img src="./assets/watch-close.svg" alt="Закрыть" />
+                    </button>
+                  </div>
+                  <p class="watch__suptitle">Серия 3</p>
+                  <h3 class="watch__caption">
+                    Ягодная<br />
+                    пауза
+                  </h3>
+                  <p class="watch__description">
+                    Игорь теряет флешку с презентацией для инвесторов. Вся семья, включая пса,
+                    бросается на поиски. Что спасет ситуацию, нюх Персика или вкус ягод?
+                  </p>
+                  <div class="watch__align">
+                    <a class="watch__bottom" href="https://family-henna.vercel.app/#">
+                      <img
+                        src="./assets/watch-play.svg"
+                        width="72"
+                        height="72"
+                        alt="Воспроизвести"
+                      />
+                      СМОТРЕТЬ
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="video4"
+                class="watch__item fourth swiper-slide"
+                style="
+                  background-image: url('./assets/watch-4.jpg');
+                  width: 1036.15px;
+                  margin-right: 40px;
+                "
+                role="group"
+                aria-label="5 / 5"
+              >
+                <div class="watch__main">
+                  <div class="watch__top">
+                    <img
+                      class="watch__lines"
+                      width="37"
+                      height="24"
+                      src="./assets/watch-lines.svg"
+                      alt="Связь"
+                    />
+                    <img
+                      class="watch__battery"
+                      width="53"
+                      height="25"
+                      src="./assets/watch-battery.svg"
+                      alt="Заряд"
+                    />
+                  </div>
+                  <div class="watch__align">
+                    <a class="watch__play" href="https://family-henna.vercel.app/#">
+                      <img
+                        src="./assets/watch-play.svg"
+                        width="108"
+                        height="108"
+                        alt="Воспроизвести"
+                      />
+                    </a>
+                  </div>
+                  <p class="watch__suptitle">Серия 4</p>
+                  <h3 class="watch__caption">
+                    главное,<br />
+                    чтобы моя семья<br />
+                    была рядом
+                  </h3>
+                </div>
+                <div class="watch__hover">
+                  <div class="watch__top">
+                    <img
+                      class="watch__lines"
+                      width="37"
+                      height="24"
+                      src="./assets/watch-lines.svg"
+                      alt="Связь"
+                    />
+                    <img
+                      class="watch__battery"
+                      width="53"
+                      height="25"
+                      src="./assets/watch-battery.svg"
+                      alt="Заряд"
+                    />
+                    <button class="watch__close">
+                      <img src="./assets/watch-close.svg" alt="Закрыть" />
+                    </button>
+                  </div>
+                  <p class="watch__suptitle">Серия 4</p>
+                  <h3 class="watch__caption">
+                    главное,<br />
+                    чтобы моя семья<br />
+                    была рядом
+                  </h3>
+                  <p class="watch__description">
+                    В семейном чате спор, куда поехать вместе на выходные. Макс находит идеальный
+                    вариант — и отдых за городом и новые семейные впечатления, но есть нюанс.
+                  </p>
+                  <div class="watch__align">
+                    <a class="watch__bottom" href="https://family-henna.vercel.app/#">
+                      <img
+                        src="./assets/watch-play.svg"
+                        width="72"
+                        height="72"
+                        alt="Воспроизвести"
+                      />
+                      СМОТРЕТЬ
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="watch__pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+            >
+              <span
+                class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                tabindex="0"
+                role="button"
+                aria-label="Go to slide 1"
+                aria-current="true"
+              ></span
+              ><span
+                class="swiper-pagination-bullet"
+                tabindex="0"
+                role="button"
+                aria-label="Go to slide 2"
+              ></span
+              ><span
+                class="swiper-pagination-bullet"
+                tabindex="0"
+                role="button"
+                aria-label="Go to slide 3"
+              ></span
+              ><span
+                class="swiper-pagination-bullet"
+                tabindex="0"
+                role="button"
+                aria-label="Go to slide 4"
+              ></span
+              ><span
+                class="swiper-pagination-bullet"
+                tabindex="0"
+                role="button"
+                aria-label="Go to slide 5"
+              ></span>
+            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+        </div>
+      </section>
+      <section class="roles">
+        <div class="container">
+          <h2 class="roles__title">В главных ролях</h2>
+          <div class="roles__block">
+            <div class="roles__item">
+              <img
+                class="roles__image"
+                src="./assets/roles-1.png"
+                width="303"
+                height="303"
+                loading="lazy"
+                alt="Человек"
+              />
+              <p class="roles__name">мама катя</p>
+            </div>
+            <div class="roles__item">
+              <img
+                class="roles__image"
+                src="./assets/roles-2.png"
+                width="303"
+                height="303"
+                loading="lazy"
+                alt="Человек"
+              />
+              <p class="roles__name">папа игорь</p>
+            </div>
+            <div class="roles__item">
+              <img
+                class="roles__image"
+                src="./assets/roles-3.png"
+                width="303"
+                height="303"
+                loading="lazy"
+                alt="Человек"
+              />
+              <p class="roles__name">бабушка лариса</p>
+            </div>
+            <div class="roles__item">
+              <img
+                class="roles__image"
+                src="./assets/roles-4.png"
+                width="303"
+                height="303"
+                loading="lazy"
+                alt="Человек"
+              />
+              <p class="roles__name">НЮТА</p>
+            </div>
+            <div class="roles__item">
+              <img
+                class="roles__image"
+                src="./assets/roles-5.png"
+                width="303"
+                height="303"
+                loading="lazy"
+                alt="Человек"
+              />
+              <p class="roles__name">ДЕДУШКА ДАНИИЛ</p>
+            </div>
+            <div class="roles__item">
+              <img
+                class="roles__image"
+                src="./assets/roles-6.png"
+                width="303"
+                height="303"
+                loading="lazy"
+                alt="Человек"
+              />
+              <p class="roles__name">Макс</p>
+            </div>
+            <div class="roles__item">
+              <img
+                class="roles__image"
+                src="./assets/roles-7.png"
+                width="303"
+                height="303"
+                loading="lazy"
+                alt="Человек"
+              />
+              <p class="roles__name">Персик</p>
+            </div>
+            <div class="roles__item">
+              <img
+                class="roles__image"
+                src="./assets/roles-8.png"
+                width="303"
+                height="303"
+                loading="lazy"
+                alt="Человек"
+              />
+              <p class="roles__name">Моя Семья</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__align">
+          <picture>
+            <img
+              draggable="false"
+              class="footer__image"
+              src="./assets/footer-image.png"
+              width="1595"
+              height="692"
+              loading="lazy"
+              alt="Картинка"
+            />
+            <img
+              src="./assets/pineapple.png"
+              draggable="false"
+              class="footer__fruit pineapple"
+              alt=""
+            />
+            <img
+              src="./assets/cherry.png"
+              draggable="false"
+              class="footer__fruit cherry"
+              alt=""
+            />
+            <img
+              src="./assets/orange.png"
+              draggable="false"
+              class="footer__fruit orange"
+              alt=""
+            />
+            <img
+              src="./assets/currant1.svg"
+              draggable="false"
+              class="footer__fruit currant1"
+              alt=""
+            />
+            <img
+              src="./assets/currant2.svg"
+              draggable="false"
+              class="footer__fruit currant2"
+              alt=""
+            />
+            <img
+              src="./assets/currant3.svg"
+              draggable="false"
+              class="footer__fruit currant3"
+              alt=""
+            />
+            <img
+              src="./assets/raspberry.svg"
+              draggable="false"
+              class="footer__fruit raspberry"
+              alt=""
+            />
+            <img
+              src="./assets/strawberry.svg"
+              draggable="false"
+              class="footer__fruit strawberry"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__left">
+            <div class="footer__social">
+              Мы в соцсетях
+              <a class="footer__vk" href="https://vk.com/moya_semia?from=search" target="_blank">
+                <img src="./assets/vk-icon.svg" width="54" height="54" alt="Вконтакте" />
+              </a>
+            </div>
+            <p class="footer__register">
+              «Моя Семья» является зарегистрированным товарным знаком АО&nbsp;«Мултон». © 2023.
+              АО&nbsp;«Мултон». Все права защищены. <br />
+              Материалы сайта предназначены только для совершеннолетних.
+            </p>
+            <p class="footer__material">
+              Материалы сайта предназначены только для совершеннолетних.
+            </p>
+          </div>
+          <div class="footer__right">
+            <a
+              class="footer__link"
+              href="https://moya-semia.ru/files/konfidention.pdf"
+              target="_blank"
+              >Положение о конфиденциальности</a
+            >
+
+            <a class="footer__link" href="https://moya-semia.ru/files/rules.pdf" target="_blank"
+              >Условия пользования веб-сайтом</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <iframe
+          id="videoPlayer"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          allow="clipboard-write; autoplay"
+          webkitallowfullscreen=""
+          mozallowfullscreen=""
+          allowfullscreen=""
+        ></iframe>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/gsap.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+  </body>
+</html>

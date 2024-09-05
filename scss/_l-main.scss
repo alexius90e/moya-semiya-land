@@ -1,0 +1,12 @@
+.main {
+  padding: 111px 0 0;
+  overflow: hidden;
+  background: url(../assets/main-bg-2.png) center/cover no-repeat #fff;
+
+  @include tablet {
+    padding-top: 30px;
+    background-image: url(../assets/main-bg-mobile.png);
+    background-size: 100% auto;
+    background-position: bottom;
+  }
+}
