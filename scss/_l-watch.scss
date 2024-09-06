@@ -25,6 +25,10 @@
       background: url(../assets/arrow.svg) center / contain no-repeat;
       filter: drop-shadow(0 0 4px rgba($color: #000000, $alpha: 0.25));
       cursor: pointer;
+
+      &.swiper-button-disabled {
+        opacity: 0.2;
+      }
     }
 
     &-prev {
@@ -204,10 +208,10 @@
     line-height: 129%;
     color: #fff;
     margin: 0;
+    text-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.25);
 
     @include desktop {
       font-size: 40px;
-      text-shadow: none;
     }
   }
 
