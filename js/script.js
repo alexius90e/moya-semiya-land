@@ -1,23 +1,22 @@
 const watchSlider = new Swiper('.watch__slider', {
   slidesPerView: 2,
   spaceBetween: 40,
+  navigation: {
+    nextEl: '.watch .watch__controls-next',
+    prevEl: '.watch .watch__controls-prev',
+  },
   pagination: {
     el: '.watch__pagination',
     clickable: true,
   },
-
   breakpoints: {
     320: {
       spaceBetween: 20,
       slidesPerView: 1.5,
     },
-    400: {
-      spaceBetween: 20,
-      slidesPerView: 1.6,
-    },
     576: {
       spaceBetween: 20,
-      slidesPerView: 2,
+      slidesPerView: 1.7,
     },
     768: {
       spaceBetween: 20,
@@ -44,15 +43,6 @@ const watchSlider = new Swiper('.watch__slider', {
       slidesPerView: 4,
     },
   },
-  // on: {
-  //   init: function () {},
-  //   slideChange: function () {
-  //     this.slides[this.activeIndex].classList.add('active');
-  //   },
-  //   touchEnd: function () {
-  //     this.slides[this.activeIndex].classList.remove('active');
-  //   },
-  // },
 });
 
 function checkUrlHashAndActivateSlide(swiper) {

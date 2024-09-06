@@ -147,37 +147,16 @@
 
       <section class="watch">
         <div class="container" id="episode">
-          <div
-            class="watch__slider swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
-          >
-            <div
-              class="swiper-wrapper"
-              id="swiper-wrapper-e9910ab5eac2e20a9"
-              aria-live="polite"
-              style="
-                transition-duration: 0ms;
-                transform: translate3d(0px, 0px, 0px);
-                transition-delay: 0ms;
-              "
-            >
-              <div
-                class="watch__first swiper-slide active swiper-slide-active"
-                role="group"
-                aria-label="1 / 5"
-                style="width: 1036.15px; margin-right: 40px"
-              >
+          <div class="watch__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide watch__first">
                 <h2 class="watch__title">Смотрите<br />все серии</h2>
               </div>
+
               <div
                 id="video1"
-                class="watch__item first swiper-slide swiper-slide-next"
-                style="
-                  background-image: url('./assets/watch-1.jpg');
-                  width: 1036.15px;
-                  margin-right: 40px;
-                "
-                role="group"
-                aria-label="2 / 5"
+                class="watch__item first swiper-slide"
+                style="background-image: url('./assets/watch-1.jpg')"
               >
                 <div class="watch__main">
                   <div class="watch__top">
@@ -254,16 +233,11 @@
                   </div>
                 </div>
               </div>
+
               <div
                 id="video2"
                 class="watch__item second swiper-slide"
-                style="
-                  background-image: url('./assets/watch-2.jpg');
-                  width: 1036.15px;
-                  margin-right: 40px;
-                "
-                role="group"
-                aria-label="3 / 5"
+                style="background-image: url('./assets/watch-2.jpg')"
               >
                 <div class="watch__main">
                   <div class="watch__top">
@@ -341,16 +315,11 @@
                   </div>
                 </div>
               </div>
+
               <div
                 id="video3"
                 class="watch__item third swiper-slide"
-                style="
-                  background-image: url('./assets/watch-3.jpg');
-                  width: 1036.15px;
-                  margin-right: 40px;
-                "
-                role="group"
-                aria-label="4 / 5"
+                style="background-image: url('./assets/watch-3.jpg')"
               >
                 <div class="watch__main">
                   <div class="watch__top">
@@ -427,16 +396,11 @@
                   </div>
                 </div>
               </div>
+
               <div
                 id="video4"
                 class="watch__item fourth swiper-slide"
-                style="
-                  background-image: url('./assets/watch-4.jpg');
-                  width: 1036.15px;
-                  margin-right: 40px;
-                "
-                role="group"
-                aria-label="5 / 5"
+                style="background-image: url('./assets/watch-4.jpg')"
               >
                 <div class="watch__main">
                   <div class="watch__top">
@@ -516,42 +480,13 @@
                 </div>
               </div>
             </div>
-            <div
-              class="watch__pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
-            >
-              <span
-                class="swiper-pagination-bullet swiper-pagination-bullet-active"
-                tabindex="0"
-                role="button"
-                aria-label="Go to slide 1"
-                aria-current="true"
-              ></span
-              ><span
-                class="swiper-pagination-bullet"
-                tabindex="0"
-                role="button"
-                aria-label="Go to slide 2"
-              ></span
-              ><span
-                class="swiper-pagination-bullet"
-                tabindex="0"
-                role="button"
-                aria-label="Go to slide 3"
-              ></span
-              ><span
-                class="swiper-pagination-bullet"
-                tabindex="0"
-                role="button"
-                aria-label="Go to slide 4"
-              ></span
-              ><span
-                class="swiper-pagination-bullet"
-                tabindex="0"
-                role="button"
-                aria-label="Go to slide 5"
-              ></span>
-            </div>
-            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+
+            <div class="watch__pagination swiper-pagination"></div>
+          </div>
+
+          <div class="watch__controls">
+            <div class="watch__controls-prev" role="button"></div>
+            <div class="watch__controls-next" role="button"></div>
           </div>
         </div>
       </section>
