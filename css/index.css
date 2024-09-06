@@ -1128,12 +1128,12 @@ img {
 }
 @media (max-width: 992px) {
   .intro {
-    padding-top: 540px;
+    padding-top: 680px;
   }
 }
 @media (max-width: 768px) {
   .intro {
-    padding-top: 380px;
+    padding-top: 500px;
   }
 }
 @media (max-width: 576px) {
@@ -1255,7 +1255,7 @@ img {
   }
 }
 .intro__description {
-  max-width: 740px;
+  max-width: 640px;
   width: 100%;
   margin-bottom: 60px;
   font-family: var(--second-font);
@@ -1266,12 +1266,19 @@ img {
 }
 @media (max-width: 1600px) {
   .intro__description {
+    max-width: 420px;
     font-size: 16px;
     margin-bottom: 40px;
   }
 }
+@media (max-width: 1280px) {
+  .intro__description {
+    max-width: 330px;
+  }
+}
 @media (max-width: 992px) {
   .intro__description {
+    max-width: 640px;
     font-size: 20px;
     margin-bottom: 20px;
   }
