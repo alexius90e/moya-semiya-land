@@ -94,3 +94,25 @@ if (window.innerWidth) {
     });
   });
 }
+
+const fruitImage = document.querySelector('.fruits__image');
+
+if (fruitImage) {
+  window.addEventListener('scroll', (event) => {
+    const windowHeit = event.currentTarget.innerHeight;
+    const scrollY = event.currentTarget.scrollY;
+    const fruitImageTopY = fruitImage.offsetTop;
+    const fruitImageHeight = fruitImage.scrollHeight;
+
+    const startHeight = fruitImageTopY - windowHeit;
+    const endHeight = fruitImageTopY + fruitImageHeight;
+
+    if (scrollY >= startHeight && scrollY <= endHeight) {
+      const delta = 0.5;
+      const position = (scrollY - startHeight) / (endHeight - startHeight) - 0.5;
+      const angleLimit = 200;
+
+      fruitImage.style.transform = `rotate(${position * angleLimit}deg)`;
+    }
+  });
+}
