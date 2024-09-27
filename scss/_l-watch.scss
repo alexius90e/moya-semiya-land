@@ -11,23 +11,23 @@
   }
 
   &__controls {
-    @include laptop {
-      display: none;
-    }
-
     &-prev,
     &-next {
       position: absolute;
       top: 50%;
       z-index: 100;
-      height: 40px;
       width: 25px;
+      aspect-ratio: 5 / 8;
       background: url(../assets/arrow.svg) center / contain no-repeat;
-      filter: drop-shadow(0 0 4px rgba($color: #000000, $alpha: 0.25));
+      filter: drop-shadow(0 0 4px rgba($color: #000000, $alpha: 0.75));
       cursor: pointer;
 
+      @include laptop {
+        width: 16px;
+      }
+
       &.swiper-button-disabled {
-        opacity: 0.2;
+        opacity: 0;
       }
     }
 
@@ -47,6 +47,7 @@
 
     &-wrapper {
       align-items: stretch;
+      will-change: transform;
     }
 
     &-slide {
@@ -58,6 +59,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      min-height: 21px;
       margin-top: 46px;
       display: none;
 

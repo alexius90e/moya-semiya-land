@@ -1,6 +1,5 @@
 const watchSlider = new Swiper('.watch__slider', {
-  slidesPerView: 2,
-  spaceBetween: 40,
+
   navigation: {
     nextEl: '.watch .watch__controls-next',
     prevEl: '.watch .watch__controls-prev',
